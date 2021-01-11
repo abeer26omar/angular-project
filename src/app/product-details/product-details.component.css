@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+.imgs-zoom-area img {
+    width: 100% !important;
+}
+.single-product-info h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+       font-size: 1.75rem;
+    color: #575757;
+} 
+.brand-name-2 {
+    color: #999999;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.f-left {
+    float: left;
+}
+.color-title {
+    color: #575757;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    width: 70px;
+}
+.cart-plus-minus {
+    border: 1px solid #cccccc;
+    height: 25px;
+    text-align: center;
+    width: 90px;
+    color: #666666;
+}
+.dec.qtybutton {
+    float: left;
+}
+.qtybutton {
+    background: #cccccc none repeat scroll 0 0;
+    height: 100%;
+    width: 30%;
+}
+input.cart-plus-minus-box {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+    font-family: roboto;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    width: 40%;
+    border: none !important;
+    color: #999999;
+}
+.inc.qtybutton {
+    float: right;
+}
+.qtybutton {
+    background: #cccccc none repeat scroll 0 0;
+    height: 100%;
+    width: 30%;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 400;
+    color: #575757;
+}
+.single-product-tab a {
+    text-decoration: none;
+    color: #666666;
+}

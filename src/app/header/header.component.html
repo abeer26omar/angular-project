@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <div class="header-box">
+            <div class="container">
+                <div class="mobile-view">
+                    <!-- <mat-icon fontSet="material-icons-outlined" (click)="toggelSidenav()">menu</mat-icon> -->
+                </div>
+                <div class="logo">
+                    <a [routerLink]="['/']" style="width: 100px;">
+                        <img src="../../assets/images/logo.png" height="50px">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="list">
+                        <li class="contain" [routerLink]="['/']" routerLinkActive="active"><span>HOME</span></li>
+                        <li class="contain" [routerLink]="['/products']" routerLinkActive="active"><span>products</span></li>
+                       
+        
+        
+                    </ul>
+                </div>
+                <div class="menu mt-1">
+                    <ul class="list">
+                        <li class="cart" >
+                            <i [routerLink]="['/cart']" class="bx bx-cart"></i>
+                        </li>
+        
+                        <li class="profile" >
+                            <i [routerLink]="['/profile']" class="bx bx-user"></i>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

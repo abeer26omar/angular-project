@@ -1,0 +1,46 @@
+
+<!--start main-contenet---------------------------------------------------------->
+<div class="container mt-5">
+    <div class="form-group">
+        <label for="search-text">Search Text</label>
+        <input type="email" class="form-control" id="search-text" [(ngModel)]="searchText" aria-describedby="search-text" 
+         placeholder="Enter text to search" 
+          autofocus>
+      </div>
+    <div class="table-responsive mt-5" >
+        <table class="table table-hover table-bordered">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">image</th>
+                    <th scope="col">title</th>
+                    <th scope="col">price</th>
+                    <th scope="col">categorey</th>
+                    <th scope="col">description</th>
+                    <th scope="col">Actions</th>
+
+                  </tr>
+            </thead>
+            <tbody *ngFor="let product of Prdoucts |search: searchText" >
+            <tr class="no-b"> 
+                <td class="w-10">
+                    <a [routerLink]="['/product-details',product.id]" title="view details"><img src={{product.image}} alt=""></a>
+                </td>
+                <td>
+                    <h6>{{product.title}}</h6>
+                </td>
+                <td>{{product.price}}</td>
+                <td> <button type="button" class="btn btn-sm btn-outline-warning round">{{product.category}}</button></td>
+                <td>
+                    <span>{{product.description}}</span>
+                    
+                </td>
+                <td>
+                    <a (click)="getData(product)" class="btn btn-info" title="add to cart"><i class='bx bxs-cart-add bx-border-circle'></i></a>
+                </td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+
+</div>
+

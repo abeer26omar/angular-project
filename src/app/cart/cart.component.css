@@ -1,0 +1,11 @@
+
+.card-body{
+    text-align: center;
+}
+.card-body button{
+    /* background-color: #e69500; */
+    border-radius: 50%;
+    font-size: 1rem;
+    /* outline: none; */
+    margin: 0 20px;
+}
